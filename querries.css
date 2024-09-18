@@ -329,13 +329,9 @@
     gap: 5px;
   }
 
-  .portfolio-tab {
-    background-color: green;
-  }
-
   .portfolio-tab .main-nav-list {
     margin: 0 auto;
-    background-color: red;
+    /* background-color: red; */
     gap: 5px;
     font-size: 1rem;
   }
