@@ -1,0 +1,1803 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="querries.css" />
+    <title>Hero-Biz</title>
+  </head>
+  <body>
+    <header class="header">
+      <span class="logo">HeroBiz <span class="hero-dot">.</span></span>
+      <ul class="main-nav-list">
+        <li><a class="nav-list" href="#">Home</a></li>
+        <li><a class="nav-list" href="#about">About</a></li>
+        <li><a class="nav-list" href="#services">Services</a></li>
+        <li><a class="nav-list" href="#portfolio">Portfolio</a></li>
+        <li><a class="nav-list" href="#team">Team</a></li>
+        <li><a class="nav-list" href="#blog">Blog</a></li>
+
+        <li class="nav-list drop">
+          <a class="nav-list" href=""
+            >Dropdown <ion-icon name="chevron-down-outline"></ion-icon
+          ></a>
+          <ul class="dropdowns" name="" id="">
+            <li class="dropdown-list">Dropdown 1</li>
+            <li class="dropdown-list deep">
+              Deep Dropdown <ion-icon name="chevron-down-outline"></ion-icon>
+              <ul class="deep-dropdowns" name="" id="">
+                <li class="dropdown-list">Deep Dropdown 1</li>
+                <li class="dropdown-list">Deep Dropdown 2</li>
+                <li class="dropdown-list">Deep Dropdown 3</li>
+                <li class="dropdown-list">Deep Dropdown 4</li>
+                <li class="dropdown-list">Deep Dropdown 5</li>
+              </ul>
+            </li>
+            <li class="dropdown-list">Dropdown 2</li>
+            <li class="dropdown-list">Dropdown 3</li>
+            <li class="dropdown-list">Dropdown 4</li>
+          </ul>
+        </li>
+        <li><a class="nav-list" href="#contact">Contact</a></li>
+      </ul>
+      <a href="" class="btn btn-navs">Get Started</a>
+      <button class="btn-nav">
+        <ion-icon name="menu-outline" class="menu"></ion-icon>
+        <ion-icon name="close-outline" class="close"></ion-icon>
+      </button>
+    </header>
+    <section class="hero container">
+      <img class="hero-image" src="/img/hero-img.svg" alt="hero image" />
+      <div class="hero-text-box">
+        <p class="welcome">Welcome to <span class="biz">HeroBiz</span></p>
+        <p class="description">
+          Et voluptate esse accusantium accusamus natus reiciendis quidem
+          voluptates similique aut.
+        </p>
+        <div class="playbox">
+          <a href="" class="btn">Get started</a>
+          <a class="play" href="#">
+            <ion-icon class="play-icon" name="play-circle-outline"></ion-icon>
+            <strong class="watch">Watch Video</strong>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="section ref container">
+      <div class="ref-container">
+        <div class="ref-item">
+          <ion-icon class="ref-icon" name="cash-outline"></ion-icon>
+          <h2 class="ref-title">Lorem Ipsum</h2>
+          <p class="ref-description">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+            quasi. Blanditiis reiciendis temporibus delectus iste in ratione
+            accusantium quia nobis, maiores illo mollitia vero ex, dicta, eius
+            recusandae error expedita?
+          </p>
+        </div>
+        <div class="ref-item">
+          <ion-icon class="ref-icon" name="cash-outline"></ion-icon>
+          <h2 class="ref-title">Lorem Ipsum</h2>
+          <p class="ref-description">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+            quasi. Blanditiis reiciendis temporibus delectus iste in ratione
+            accusantium quia nobis, maiores illo mollitia vero ex, dicta, eius
+            recusandae error expedita?
+          </p>
+        </div>
+        <div class="ref-item">
+          <ion-icon class="ref-icon" name="cash-outline"></ion-icon>
+          <h2 class="ref-title">Lorem Ipsum</h2>
+          <p class="ref-description">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+            quasi. Blanditiis reiciendis temporibus delectus iste in ratione
+            accusantium quia nobis, maiores illo mollitia vero ex, dicta, eius
+            recusandae error expedita?
+          </p>
+        </div>
+        <div class="ref-item">
+          <ion-icon class="ref-icon" name="cash-outline"></ion-icon>
+          <h2 class="ref-title">Lorem Ipsum</h2>
+          <p class="ref-description">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+            quasi. Blanditiis reiciendis temporibus delectus iste in ratione
+            accusantium quia nobis, maiores illo mollitia vero ex, dicta, eius
+            recusandae error expedita?
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section about container" id="about">
+      <div class="title-box">
+        <h2 class="title-head">About Us</h2>
+        <p class="title-description">
+          emporibus delectus iste in ratione accusantium quia nobis, maiores
+          illo mollitia vero ex, dicta,
+        </p>
+      </div>
+      <div class="about-story">
+        <div class="about-bg">
+          <img src="img/about-bg.png" alt="" class="about-img-background" />
+          <img class="about-img" src="img/about-portrait.jpg" alt="" />
+        </div>
+        <div class="about-tabbed-component">
+          <p class="tabbed-header">
+            Neque officiis dolore maiores et exercitationem quae est seda lidera
+            pat claero
+          </p>
+          <div class="tabs">
+            <ul class="main-tabs-list">
+              <li class="tab-active">
+                <a class="tab tab-list" data-tab="0" href="">Saepe Fuga</a>
+              </li>
+              <li class="">
+                <a class="tab tab-list" href="" data-tab="1">Voluptates</a>
+              </li>
+              <li class="">
+                <a class="tab tab-list" href="" data-tab="2">Corrupti</a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content content-0 content-active">
+            <p class="tab-content-heading">
+              Consequuntur inventore voluptates consequatur aut vel et. Eos
+              doloribus expedita. Sapiente atque consequatur minima nihil quae
+              aspernatur quo suscipit voluptatem
+            </p>
+            <ul class="tab-content-list">
+              <li class="content-list">
+                <div class="content-icon-box">
+                  <ion-icon
+                    class="content-icon"
+                    name="checkmark-done-outline"
+                  ></ion-icon>
+                  <h4 class="content-header">
+                    Repudiandae rerum velit modi et officia quasi facilis
+                  </h4>
+                </div>
+                <p class="content-description">
+                  Laborum omnis voluptates voluptas qui sit aliquam blanditiis.
+                  Sapiente minima commodi dolorum non eveniet magni quaerat nemo
+                  et.
+                </p>
+              </li>
+              <li class="content-list">
+                <div class="content-icon-box">
+                  <ion-icon
+                    class="content-icon"
+                    name="checkmark-done-outline"
+                  ></ion-icon>
+                  <h4 class="content-header">
+                    Repudiandae rerum velit modi et officia quasi facilis
+                  </h4>
+                </div>
+                <p class="content-description">
+                  Laborum omnis voluptates voluptas qui sit aliquam blanditiis.
+                  Sapiente minima commodi dolorum non eveniet magni quaerat nemo
+                  et.
+                </p>
+              </li>
+              <li class="content-list">
+                <div class="content-icon-box">
+                  <ion-icon
+                    class="content-icon"
+                    name="checkmark-done-outline"
+                  ></ion-icon>
+                  <h4 class="content-header">
+                    Repudiandae rerum velit modi et officia quasi facilis
+                  </h4>
+                </div>
+                <p class="content-description">
+                  Laborum omnis voluptates voluptas qui sit aliquam blanditiis.
+                  Sapiente minima commodi dolorum non eveniet magni quaerat nemo
+                  et.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content content-1">
+            <p class="tab-content-heading">
+              Khalid inventore voluptates consequatur aut vel et. Eos doloribus
+              expedita. Sapiente atque consequatur minima nihil quae aspernatur
+              quo suscipit voluptatem
+            </p>
+            <ul class="tab-content-list">
+              <li class="content-list">
+                <div class="content-icon-box">
+                  <ion-icon
+                    class="content-icon"
+                    name="checkmark-done-outline"
+                  ></ion-icon>
+                  <h4 class="content-header">
+                    Repudiandae rerum velit modi et officia quasi facilis
+                  </h4>
+                </div>
+                <p class="content-description">
+                  Laborum omnis voluptates voluptas qui sit aliquam blanditiis.
+                  Sapiente minima commodi dolorum non eveniet magni quaerat nemo
+                  et.
+                </p>
+              </li>
+              <li class="content-list">
+                <div class="content-icon-box">
+                  <ion-icon
+                    class="content-icon"
+                    name="checkmark-done-outline"
+                  ></ion-icon>
+                  <h4 class="content-header">
+                    Repudiandae rerum velit modi et officia quasi facilis
+                  </h4>
+                </div>
+                <p class="content-description">
+                  Laborum omnis voluptates voluptas qui sit aliquam blanditiis.
+                  Sapiente minima commodi dolorum non eveniet magni quaerat nemo
+                  et.
+                </p>
+              </li>
+              <li class="content-list">
+                <div class="content-icon-box">
+                  <ion-icon
+                    class="content-icon"
+                    name="checkmark-done-outline"
+                  ></ion-icon>
+                  <h4 class="content-header">
+                    Repudiandae rerum velit modi et officia quasi facilis
+                  </h4>
+                </div>
+                <p class="content-description">
+                  Laborum omnis voluptates voluptas qui sit aliquam blanditiis.
+                  Sapiente minima commodi dolorum non eveniet magni quaerat nemo
+                  et.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content content-2">
+            <p class="tab-content-heading">
+              Hazzy inventore voluptates consequatur aut vel et. Eos doloribus
+              expedita. Sapiente atque consequatur minima nihil quae aspernatur
+              quo suscipit voluptatem
+            </p>
+            <ul class="tab-content-list">
+              <li class="content-list">
+                <div class="content-icon-box">
+                  <ion-icon
+                    class="content-icon"
+                    name="checkmark-done-outline"
+                  ></ion-icon>
+                  <h4 class="content-header">
+                    Repudiandae rerum velit modi et officia quasi facilis
+                  </h4>
+                </div>
+                <p class="content-description">
+                  Laborum omnis voluptates voluptas qui sit aliquam blanditiis.
+                  Sapiente minima commodi dolorum non eveniet magni quaerat nemo
+                  et.
+                </p>
+              </li>
+              <li class="content-list">
+                <div class="content-icon-box">
+                  <ion-icon
+                    class="content-icon"
+                    name="checkmark-done-outline"
+                  ></ion-icon>
+                  <h4 class="content-header">
+                    Repudiandae rerum velit modi et officia quasi facilis
+                  </h4>
+                </div>
+                <p class="content-description">
+                  Laborum omnis voluptates voluptas qui sit aliquam blanditiis.
+                  Sapiente minima commodi dolorum non eveniet magni quaerat nemo
+                  et.
+                </p>
+              </li>
+              <li class="content-list">
+                <div class="content-icon-box">
+                  <ion-icon
+                    class="content-icon"
+                    name="checkmark-done-outline"
+                  ></ion-icon>
+                  <h4 class="content-header">
+                    Repudiandae rerum velit modi et officia quasi facilis
+                  </h4>
+                </div>
+                <p class="content-description">
+                  Laborum omnis voluptates voluptas qui sit aliquam blanditiis.
+                  Sapiente minima commodi dolorum non eveniet magni quaerat nemo
+                  et.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section brands container grid grid-6-cols">
+      <figure class="brand-img-box">
+        <img class="brand-img" src="/img/clients/client-1.png" alt="" />
+      </figure>
+      <figure class="brand-img-box">
+        <img class="brand-img" src="/img/clients/client-2.png" alt="" />
+      </figure>
+      <figure class="brand-img-box">
+        <img class="brand-img" src="/img/clients/client-3.png" alt="" />
+      </figure>
+      <figure class="brand-img-box">
+        <img class="brand-img" src="/img/clients/client-4.png" alt="" />
+      </figure>
+      <figure class="brand-img-box">
+        <img class="brand-img" src="/img/clients/client-5.png" alt="" />
+      </figure>
+      <figure class="brand-img-box">
+        <img class="brand-img" src="/img/clients/client-6.png" alt="" />
+      </figure>
+    </section>
+    <section class="section cta container">
+      <div class="cta-container">
+        <div class="cta-story">
+          <h3 class="cta-title text-type-h3">
+            Alias sunt quas <span class="cta-span">Cupiditate</span> oluptas hic
+            minima
+          </h3>
+          <p class="description">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+          <a href="" class="btn cta-btn">Call To Action</a>
+        </div>
+        <figure class="cta-img-box">
+          <img src="/img/cta.jpg" alt="" class="cta-img" />
+        </figure>
+      </div>
+    </section>
+    <section class="section vid grid grid-2-cols">
+      <div class="vid-box">
+        <img src="/img/onfocus-video-bg.jpg" alt="" class="vid-img" />
+      </div>
+      <div class="vid-content-box">
+        <div class="vid-content">
+          <h4 class="text-title-h4">
+            Voluptatem dignissimos provident quasi corporis
+          </h4>
+          <p class="text-type-1 vid-content-title color-white">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <ul class="tab-content-list">
+            <li class="content-list">
+              <div class="content-icon-box">
+                <ion-icon
+                  class="content-icon"
+                  name="checkmark-circle-outline"
+                ></ion-icon>
+                <span class="content-header">
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </span>
+              </div>
+            </li>
+            <li class="content-list">
+              <div class="content-icon-box">
+                <ion-icon
+                  class="content-icon"
+                  name="checkmark-circle-outline"
+                ></ion-icon>
+                <span class="content-header">
+                  Duis aute irure dolor in reprehenderit in voluptate velit.
+                </span>
+              </div>
+            </li>
+            <li class="content-list">
+              <div class="content-icon-box">
+                <ion-icon
+                  class="content-icon content-icon-weird"
+                  name="checkmark-circle-outline"
+                ></ion-icon>
+                <span class="content-header">
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                </span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section tabb container">
+      <div class="tabb-container">
+        <div class="tabbs">
+          <ul class="main-tabbs-list grid grid-6-cols">
+            <li class="tab-li tab-01 tabb-active" data-tab="0">
+              <ion-icon
+                class="tabb-icon"
+                name="extension-puzzle-outline"
+              ></ion-icon>
+              <p class="tabb-text">Saepe Fuga</p>
+            </li>
+            <li class="tab-li tab-02" data-tab="1">
+              <ion-icon
+                class="tabb-icon"
+                name="extension-puzzle-outline"
+              ></ion-icon>
+              <p class="tabb-text">Saepe Fuga</p>
+            </li>
+            <li class="tab-li tab-03" data-tab="2">
+              <ion-icon
+                class="tabb-icon"
+                name="extension-puzzle-outline"
+              ></ion-icon>
+              <p class="tabb-text">Saepe Fuga</p>
+            </li>
+            <li class="tab-li tab-04" data-tab="3">
+              <ion-icon
+                class="tabb-icon"
+                name="extension-puzzle-outline"
+              ></ion-icon>
+              <p class="tabb-text">Saepe Fuga</p>
+            </li>
+            <li class="tab-li tab-05" data-tab="4">
+              <ion-icon
+                class="tabb-icon"
+                name="extension-puzzle-outline"
+              ></ion-icon>
+              <p class="tabb-text">Saepe Fuga</p>
+            </li>
+            <li class="tab-li tab-06" data-tab="5">
+              <ion-icon
+                class="tabb-icon"
+                name="extension-puzzle-outline"
+              ></ion-icon>
+              <p class="tabb-text">Saepe Fuga</p>
+            </li>
+          </ul>
+        </div>
+        <div class="tabb-content-box">
+          <div class="tabb-content tabz-content-0 tabb-content-active">
+            <h4 class="text-title-h4">
+              dave junior dignissimos provident quasi corporis
+            </h4>
+            <p class="text-type-1 vid-content-title">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <ul class="tab-content-list">
+              <li class="content-list">
+                <div class="content-icon-box">
+                  <ion-icon
+                    class="content-icon"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <span class="content-header">
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </span>
+                </div>
+              </li>
+              <li class="content-list">
+                <div class="content-icon-box">
+                  <ion-icon
+                    class="content-icon"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <span class="content-header">
+                    Duis aute irure dolor in reprehenderit in voluptate velit.
+                  </span>
+                </div>
+              </li>
+              <li class="content-list">
+                <div class="content-icon-box">
+                  <ion-icon
+                    class="content-icon content-icon-weird"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <span class="content-header">
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis
+                  </span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="tabb-content tabz-content-1">
+            <h4 class="text-title-h4">
+              wa wa wa warisi dignissimos provident quasi corporis
+            </h4>
+            <p class="text-type-1 vid-content-title">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <ul class="tab-content-list">
+              <li class="content-list">
+                <div class="content-icon-box">
+                  <ion-icon
+                    class="content-icon"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <span class="content-header">
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </span>
+                </div>
+              </li>
+              <li class="content-list">
+                <div class="content-icon-box">
+                  <ion-icon
+                    class="content-icon"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <span class="content-header">
+                    Duis aute irure dolor in reprehenderit in voluptate velit.
+                  </span>
+                </div>
+              </li>
+              <li class="content-list">
+                <div class="content-icon-box">
+                  <ion-icon
+                    class="content-icon content-icon-weird"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <span class="content-header">
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis
+                  </span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="tabb-content tabz-content-2">
+            <h4 class="text-title-h4">
+              hassan kekere dignissimos provident quasi corporis
+            </h4>
+            <p class="text-type-1 vid-content-title">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <ul class="tab-content-list">
+              <li class="content-list">
+                <div class="content-icon-box">
+                  <ion-icon
+                    class="content-icon"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <span class="content-header">
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </span>
+                </div>
+              </li>
+              <li class="content-list">
+                <div class="content-icon-box">
+                  <ion-icon
+                    class="content-icon"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <span class="content-header">
+                    Duis aute irure dolor in reprehenderit in voluptate velit.
+                  </span>
+                </div>
+              </li>
+              <li class="content-list">
+                <div class="content-icon-box">
+                  <ion-icon
+                    class="content-icon content-icon-weird"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <span class="content-header">
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis
+                  </span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="tabb-content tabz-content-3">
+            <h4 class="text-title-h4">
+              moh junior dignissimos provident quasi corporis
+            </h4>
+            <p class="text-type-1 vid-content-title">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <ul class="tab-content-list">
+              <li class="content-list">
+                <div class="content-icon-box">
+                  <ion-icon
+                    class="content-icon"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <span class="content-header">
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </span>
+                </div>
+              </li>
+              <li class="content-list">
+                <div class="content-icon-box">
+                  <ion-icon
+                    class="content-icon"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <span class="content-header">
+                    Duis aute irure dolor in reprehenderit in voluptate velit.
+                  </span>
+                </div>
+              </li>
+              <li class="content-list">
+                <div class="content-icon-box">
+                  <ion-icon
+                    class="content-icon content-icon-weird"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <span class="content-header">
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis
+                  </span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="tabb-content tabz-content-4">
+            <h4 class="text-title-h4">
+              wa wa wa warisi dignissimos provident quasi corporis
+            </h4>
+            <p class="text-type-1 vid-content-title">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <ul class="tab-content-list">
+              <li class="content-list">
+                <div class="content-icon-box">
+                  <ion-icon
+                    class="content-icon"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <span class="content-header">
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </span>
+                </div>
+              </li>
+              <li class="content-list">
+                <div class="content-icon-box">
+                  <ion-icon
+                    class="content-icon"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <span class="content-header">
+                    Duis aute irure dolor in reprehenderit in voluptate velit.
+                  </span>
+                </div>
+              </li>
+              <li class="content-list">
+                <div class="content-icon-box">
+                  <ion-icon
+                    class="content-icon content-icon-weird"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <span class="content-header">
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis
+                  </span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="tabb-content tabz-content-5">
+            <h4 class="text-title-h4">
+              hassan kekere dignissimos provident quasi corporis
+            </h4>
+            <p class="text-type-1 vid-content-title">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <ul class="tab-content-list">
+              <li class="content-list">
+                <div class="content-icon-box">
+                  <ion-icon
+                    class="content-icon"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <span class="content-header">
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </span>
+                </div>
+              </li>
+              <li class="content-list">
+                <div class="content-icon-box">
+                  <ion-icon
+                    class="content-icon"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <span class="content-header">
+                    Duis aute irure dolor in reprehenderit in voluptate velit.
+                  </span>
+                </div>
+              </li>
+              <li class="content-list">
+                <div class="content-icon-box">
+                  <ion-icon
+                    class="content-icon content-icon-weird"
+                    name="checkmark-circle-outline"
+                  ></ion-icon>
+                  <span class="content-header">
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis
+                  </span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section services container" id="services">
+      <div class="title-box">
+        <h2 class="title-head">Our Services</h2>
+        <p class="title-description">
+          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+          consectetur velit
+        </p>
+      </div>
+      <div class="service-container grid grid-3-cols">
+        <div class="expander">
+          <figure class="service-img-box">
+            <img class="service-img" src="img/services-1.jpg" alt="" />
+          </figure>
+          <div class="service-content-box">
+            <div class="service-round">
+              <ion-icon
+                class="service-icon"
+                name="analytics-outline"
+              ></ion-icon>
+            </div>
+            <h4 class="service-title text-title-h4">Nescuite mete</h4>
+            <p class="service-description text-type-p">
+              Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+              consectetur velit
+            </p>
+          </div>
+        </div>
+        <div class="expander">
+          <figure class="service-img-box">
+            <img class="service-img" src="img/services-2.jpg" alt="" />
+          </figure>
+          <div class="service-content-box">
+            <div class="service-round">
+              <ion-icon
+                class="service-icon"
+                name="analytics-outline"
+              ></ion-icon>
+            </div>
+            <h4 class="service-title text-title-h4">Nescuite mete</h4>
+            <p class="service-description text-type-p">
+              Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+              consectetur velit
+            </p>
+          </div>
+        </div>
+        <div class="expander">
+          <figure class="service-img-box">
+            <img class="service-img" src="img/services-3.jpg" alt="" />
+          </figure>
+          <div class="service-content-box">
+            <div class="service-round">
+              <ion-icon
+                class="service-icon"
+                name="analytics-outline"
+              ></ion-icon>
+            </div>
+            <h4 class="service-title text-title-h4">Nescuite mete</h4>
+            <p class="service-description text-type-p">
+              Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+              consectetur velit
+            </p>
+          </div>
+        </div>
+        <div class="expander">
+          <figure class="service-img-box">
+            <img class="service-img" src="img/services-4.jpg" alt="" />
+          </figure>
+          <div class="service-content-box">
+            <div class="service-round">
+              <ion-icon
+                class="service-icon"
+                name="analytics-outline"
+              ></ion-icon>
+            </div>
+            <h4 class="service-title text-title-h4">Nescuite mete</h4>
+            <p class="service-description text-type-p">
+              Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+              consectetur velit
+            </p>
+          </div>
+        </div>
+        <div class="expander">
+          <figure class="service-img-box">
+            <img class="service-img" src="img/services-5.jpg" alt="" />
+          </figure>
+          <div class="service-content-box">
+            <div class="service-round">
+              <ion-icon
+                class="service-icon"
+                name="analytics-outline"
+              ></ion-icon>
+            </div>
+            <h4 class="service-title text-title-h4">Nescuite mete</h4>
+            <p class="service-description text-type-p">
+              Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+              consectetur velit
+            </p>
+          </div>
+        </div>
+        <div class="expander">
+          <figure class="service-img-box">
+            <img class="service-img" src="img/services-6.jpg" alt="" />
+          </figure>
+          <div class="service-content-box">
+            <div class="service-round">
+              <ion-icon
+                class="service-icon"
+                name="analytics-outline"
+              ></ion-icon>
+            </div>
+            <h4 class="service-title text-title-h4">Nescuite mete</h4>
+            <p class="service-description text-type-p">
+              Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+              consectetur velit
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section testimony">
+      <div class="title-box testimony-heading">
+        <h2 class="title-head color-white">Testimonials</h2>
+        <p class="title-description color-white">
+          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+          consectetur velit
+        </p>
+      </div>
+      <div class="slider-box">
+        <div class="slide">
+          <figure class="slider-round">
+            <img
+              src="img/testimonials/testimonials-1.jpg"
+              alt=""
+              class="slider-img"
+            />
+          </figure>
+          <h2 class="slide-name text-title-h4">Saul Goodman</h2>
+          <span class="text-type-p color-white slide-title">CEO & Founder</span>
+          <div class="stars">
+            <ion-icon class="star" name="star"></ion-icon>
+            <ion-icon class="star" name="star"></ion-icon>
+            <ion-icon class="star" name="star"></ion-icon>
+            <ion-icon class="star" name="star"></ion-icon>
+            <ion-icon class="star" name="star"></ion-icon>
+          </div>
+          <blockquote class="slide-description text-type-p color-white">
+            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+            consectetur velit
+          </blockquote>
+        </div>
+        <div class="slide">
+          <figure class="slider-round">
+            <img
+              src="img/testimonials/testimonials-2.jpg"
+              alt=""
+              class="slider-img"
+            />
+          </figure>
+          <h2 class="slide-name text-title-h4">Sarah Willson</h2>
+          <span class="slide-title text-type-p testimony-heading"
+            >Designer</span
+          >
+          <div class="stars">
+            <ion-icon class="star" name="star"></ion-icon>
+            <ion-icon class="star" name="star"></ion-icon>
+            <ion-icon class="star" name="star"></ion-icon>
+            <ion-icon class="star" name="star"></ion-icon>
+            <ion-icon class="star" name="star"></ion-icon>
+          </div>
+          <blockquote class="slide-description text-type-p testimony-heading">
+            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+            consectetur velit
+          </blockquote>
+        </div>
+        <div class="slide">
+          <figure class="slider-round">
+            <img
+              src="img/testimonials/testimonials-3.jpg"
+              alt=""
+              class="slider-img"
+            />
+          </figure>
+          <h2 class="slide-name text-title-h4">Jena karlis</h2>
+          <span class="slide-title text-type-p testimony-heading"
+            >Store Owner</span
+          >
+          <div class="stars">
+            <ion-icon class="star" name="star"></ion-icon>
+            <ion-icon class="star" name="star"></ion-icon>
+            <ion-icon class="star" name="star"></ion-icon>
+            <ion-icon class="star" name="star"></ion-icon>
+            <ion-icon class="star" name="star"></ion-icon>
+          </div>
+          <blockquote class="slide-description text-type-p testimony-heading">
+            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+            consectetur velit
+          </blockquote>
+        </div>
+        <div class="slide">
+          <figure class="slider-round">
+            <img
+              src="img/testimonials/testimonials-4.jpg"
+              alt=""
+              class="slider-img"
+            />
+          </figure>
+          <h2 class="slide-name text-title-h4">Matt Brandon</h2>
+          <span class="slide-title text-type-p testimony-heading"
+            >CEO & Founder</span
+          >
+          <div class="stars">
+            <ion-icon class="star" name="star"></ion-icon>
+            <ion-icon class="star" name="star"></ion-icon>
+            <ion-icon class="star" name="star"></ion-icon>
+            <ion-icon class="star" name="star"></ion-icon>
+            <ion-icon class="star" name="star"></ion-icon>
+          </div>
+          <blockquote class="slide-description text-type-p testimony-heading">
+            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+            consectetur velit
+          </blockquote>
+        </div>
+        <div class="slide">
+          <figure class="slider-round">
+            <img
+              src="img/testimonials/testimonials-5.jpg"
+              alt=""
+              class="slider-img"
+            />
+          </figure>
+          <h2 class="slide-name text-title-h4">John Larson</h2>
+          <span class="slide-title text-type-p testimony-heading"
+            >Enterprenuer</span
+          >
+          <div class="stars">
+            <ion-icon class="star" name="star"></ion-icon>
+            <ion-icon class="star" name="star"></ion-icon>
+            <ion-icon class="star" name="star"></ion-icon>
+            <ion-icon class="star" name="star"></ion-icon>
+            <ion-icon class="star" name="star"></ion-icon>
+          </div>
+          <blockquote class="slide-description text-type-p testimony-heading">
+            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+            consectetur velit
+          </blockquote>
+        </div>
+      </div>
+      <div class="dots">
+        <div class="dot dot-0 dot-active"></div>
+        <div class="dot dot-1"></div>
+        <div class="dot dot-2"></div>
+        <div class="dot dot-3"></div>
+        <div class="dot dot-4"></div>
+      </div>
+    </section>
+    <section class="section pricing container">
+      <div class="title-box">
+        <h2 class="title-head">Our Pricing</h2>
+        <p class="title-description">
+          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+          consectetur velit
+        </p>
+      </div>
+      <div class="pricing-box grid grid-3-cols">
+        <div class="each-price">
+          <div class="price-top">
+            <h3 class="price-heading text-type-h3">Free Plan</h3>
+            <span class="price color-white"
+              ><sup>$</sup>0 <label class="month" for="">/ month</label></span
+            >
+          </div>
+          <div class="price-bottom">
+            <ul class="price-list">
+              <li class="price-li">
+                <ion-icon class="price-icon" name="ellipse"></ion-icon>
+                <a href="korede.html" class="nav-list"
+                  >Quam adipiscing vitae proin</a
+                >
+              </li>
+              <li class="price-li">
+                <ion-icon class="price-icon" name="ellipse"></ion-icon>
+                <a href="#" class="nav-list">Quam adipiscing vitae proin</a>
+              </li>
+              <li class="price-li">
+                <ion-icon class="price-icon" name="ellipse"></ion-icon>
+                <a href="#" class="nav-list">Quam adipiscing vitae proin</a>
+              </li>
+              <li class="price-li">
+                <ion-icon
+                  class="price-ico close-icon"
+                  name="close-outline"
+                ></ion-icon>
+                <a href="#" class="nav-list line-through"
+                  >Quam adipiscing vitae proin</a
+                >
+              </li>
+              <li class="price-li">
+                <ion-icon
+                  class="price-ico close-icon"
+                  name="close-outline"
+                ></ion-icon>
+                <a href="#" class="nav-list line-through"
+                  >Quam adipiscing vitae proin</a
+                >
+              </li>
+            </ul>
+            <a href="#" class="btn buy-btn">Buy Now</a>
+          </div>
+        </div>
+        <div class="each-price active-price">
+          <div class="price-top">
+            <h3 class="price-heading text-type-h3">Free Plan</h3>
+            <span class="price color-white"
+              ><sup>$</sup>0 <label class="month" for="">/ month</label></span
+            >
+          </div>
+          <div class="price-bottom">
+            <ul class="price-list">
+              <li class="price-li">
+                <ion-icon class="price-icon" name="ellipse"></ion-icon>
+                <a href="#" class="nav-list">Quam adipiscing vitae proin</a>
+              </li>
+              <li class="price-li">
+                <ion-icon class="price-icon" name="ellipse"></ion-icon>
+                <a href="#" class="nav-list">Quam adipiscing vitae proin</a>
+              </li>
+              <li class="price-li">
+                <ion-icon class="price-icon" name="ellipse"></ion-icon>
+                <a href="#" class="nav-list">Quam adipiscing vitae proin</a>
+              </li>
+              <li class="price-li">
+                <ion-icon class="price-icon" name="ellipse"></ion-icon>
+                <a href="#" class="nav-list">Quam adipiscing vitae proin</a>
+              </li>
+              <li class="price-li">
+                <ion-icon class="price-icon" name="ellipse"></ion-icon>
+                <a href="#" class="nav-list">Quam adipiscing vitae proin</a>
+              </li>
+            </ul>
+            <a href="#" class="btn buy-btn">Buy Now</a>
+          </div>
+        </div>
+        <div class="each-price">
+          <div class="price-top">
+            <h3 class="price-heading text-type-h3">Free Plan</h3>
+            <span class="price color-white"
+              ><sup>$</sup>0 <label class="month" for="">/ month</label></span
+            >
+          </div>
+          <div class="price-bottom">
+            <ul class="price-list">
+              <li class="price-li">
+                <ion-icon class="price-icon" name="ellipse"></ion-icon>
+                <a href="#" class="nav-list">Quam adipiscing vitae proin</a>
+              </li>
+              <li class="price-li">
+                <ion-icon class="price-icon" name="ellipse"></ion-icon>
+                <a href="#" class="nav-list">Quam adipiscing vitae proin</a>
+              </li>
+              <li class="price-li">
+                <ion-icon class="price-icon" name="ellipse"></ion-icon>
+                <a href="#" class="nav-list">Quam adipiscing vitae proin</a>
+              </li>
+              <li class="price-li">
+                <ion-icon class="price-icon" name="ellipse"></ion-icon>
+                <a href="#" class="nav-list">Quam adipiscing vitae proin</a>
+              </li>
+              <li class="price-li">
+                <ion-icon class="price-icon" name="ellipse"></ion-icon>
+                <a href="#" class="nav-list">Quam adipiscing vitae proin</a>
+              </li>
+            </ul>
+            <a href="#" class="btn buy-btn">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section faqs">
+      <div class="faq-box">
+        <h4 class="text-title-h4">
+          Frequently Asked <strong>Questions</strong>
+        </h4>
+        <p class="text-type-2">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute
+          irure dolor in reprehenderit
+        </p>
+        <div class="faq-accordion">
+          <div class="accordion-heading">
+            <ion-icon
+              class="accordion-icon"
+              name="help-circle-outline"
+            ></ion-icon>
+            <p class="text-type-1 color-dark">
+              Non consectetur a erat nam at lectus urna duis?
+            </p>
+            <div class="accordion-icon-box">
+              <ion-icon
+                class="accordion-icon acc-icon-1"
+                name="chevron-forward-outline"
+              ></ion-icon>
+              <ion-icon
+                class="accordion-icon acc-icon-2 hidden"
+                name="chevron-down-outline"
+              ></ion-icon>
+            </div>
+          </div>
+          <p class="accordion-body text-type-2 hidden">
+            Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id
+            volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna
+            fringilla urna porttitor rhoncus dolor purus non.
+          </p>
+        </div>
+        <div class="faq-accordion">
+          <div class="accordion-heading">
+            <ion-icon
+              class="accordion-icon"
+              name="help-circle-outline"
+            ></ion-icon>
+            <p class="text-type-1 color-dark">
+              Non consectetur a erat nam at lectus urna duis?
+            </p>
+            <div class="accordion-icon-box">
+              <ion-icon
+                class="accordion-icon acc-icon-1"
+                name="chevron-forward-outline"
+              ></ion-icon>
+              <ion-icon
+                class="accordion-icon acc-icon-2 hidden"
+                name="chevron-down-outline"
+              ></ion-icon>
+            </div>
+          </div>
+          <p class="accordion-body text-type-2 hidden">
+            Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id
+            volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna
+            fringilla urna porttitor rhoncus dolor purus non.
+          </p>
+        </div>
+        <div class="faq-accordion">
+          <div class="accordion-heading">
+            <ion-icon
+              class="accordion-icon"
+              name="help-circle-outline"
+            ></ion-icon>
+            <p class="text-type-1 color-dark">
+              Non consectetur a erat nam at lectus urna duis?
+            </p>
+            <div class="accordion-icon-box">
+              <ion-icon
+                class="accordion-icon acc-icon-1"
+                name="chevron-forward-outline"
+              ></ion-icon>
+              <ion-icon
+                class="accordion-icon acc-icon-2 hidden"
+                name="chevron-down-outline"
+              ></ion-icon>
+            </div>
+          </div>
+          <p class="accordion-body text-type-2 hidden">
+            Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id
+            volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna
+            fringilla urna porttitor rhoncus dolor purus non.
+          </p>
+        </div>
+      </div>
+      <figure class="faq-img-box">
+        <img src="img/faq.jpg" alt="" class="faq-img" />
+      </figure>
+    </section>
+    <section class="section portfolio container" id="portfolio">
+      <div class="title-box">
+        <h2 class="title-head">Portfolio</h2>
+        <p class="title-description">
+          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+          consectetur velit
+        </p>
+      </div>
+      <div class="portfolio-tab">
+        <ul class="main-nav-list">
+          <li>
+            <a class="nav-list portfolio-active" data-tab="0" href="">All</a>
+          </li>
+          <li><a class="nav-list" data-tab="1" href="">App</a></li>
+          <li><a class="nav-list" data-tab="2" href="">Product</a></li>
+          <li><a class="nav-list" data-tab="3" href="">Branding</a></li>
+          <li><a class="nav-list" data-tab="4" href="">Books</a></li>
+        </ul>
+      </div>
+      <div class="portfolio-content-box">
+        <div class="portfolio-content grid grid-4-cols portfolio-content-0">
+          <figure class="portfolio-img-box">
+            <div class="portfolio-icon-box">
+              <ion-icon class="portfolio-icon" name="search-outline"></ion-icon>
+              <ion-icon
+                class="portfolio-icon"
+                name="bookmark-outline"
+              ></ion-icon>
+            </div>
+            <img src="img/portfolio/app-1.jpg" alt="" class="portfolio-img" />
+          </figure>
+          <figure class="portfolio-img-box">
+            <div class="portfolio-icon-box">
+              <ion-icon class="portfolio-icon" name="search-outline"></ion-icon>
+              <ion-icon
+                class="portfolio-icon"
+                name="bookmark-outline"
+              ></ion-icon>
+            </div>
+            <img src="img/portfolio/app-2.jpg" alt="" class="portfolio-img" />
+          </figure>
+          <figure class="portfolio-img-box">
+            <div class="portfolio-icon-box">
+              <ion-icon class="portfolio-icon" name="search-outline"></ion-icon>
+              <ion-icon
+                class="portfolio-icon"
+                name="bookmark-outline"
+              ></ion-icon>
+            </div>
+            <img src="img/portfolio/app-3.jpg" alt="" class="portfolio-img" />
+          </figure>
+          <figure class="portfolio-img-box">
+            <div class="portfolio-icon-box">
+              <ion-icon class="portfolio-icon" name="search-outline"></ion-icon>
+              <ion-icon
+                class="portfolio-icon"
+                name="bookmark-outline"
+              ></ion-icon>
+            </div>
+            <img src="img/portfolio/books-1.jpg" alt="" class="portfolio-img" />
+          </figure>
+          <figure class="portfolio-img-box">
+            <div class="portfolio-icon-box">
+              <ion-icon class="portfolio-icon" name="search-outline"></ion-icon>
+              <ion-icon
+                class="portfolio-icon"
+                name="bookmark-outline"
+              ></ion-icon>
+            </div>
+            <img src="img/portfolio/books-2.jpg" alt="" class="portfolio-img" />
+          </figure>
+          <figure class="portfolio-img-box">
+            <div class="portfolio-icon-box">
+              <ion-icon class="portfolio-icon" name="search-outline"></ion-icon>
+              <ion-icon
+                class="portfolio-icon"
+                name="bookmark-outline"
+              ></ion-icon>
+            </div>
+            <img src="img/portfolio/books-3.jpg" alt="" class="portfolio-img" />
+          </figure>
+          <figure class="portfolio-img-box">
+            <div class="portfolio-icon-box">
+              <ion-icon class="portfolio-icon" name="search-outline"></ion-icon>
+              <ion-icon
+                class="portfolio-icon"
+                name="bookmark-outline"
+              ></ion-icon>
+            </div>
+            <img
+              src="img/portfolio/branding-1.jpg"
+              alt=""
+              class="portfolio-img"
+            />
+          </figure>
+          <figure class="portfolio-img-box">
+            <div class="portfolio-icon-box">
+              <ion-icon class="portfolio-icon" name="search-outline"></ion-icon>
+              <ion-icon
+                class="portfolio-icon"
+                name="bookmark-outline"
+              ></ion-icon>
+            </div>
+            <img
+              src="img/portfolio/branding-2.jpg"
+              alt=""
+              class="portfolio-img"
+            />
+          </figure>
+          <figure class="portfolio-img-box">
+            <div class="portfolio-icon-box">
+              <ion-icon class="portfolio-icon" name="search-outline"></ion-icon>
+              <ion-icon
+                class="portfolio-icon"
+                name="bookmark-outline"
+              ></ion-icon>
+            </div>
+            <img
+              src="img/portfolio/branding-3.jpg"
+              alt=""
+              class="portfolio-img"
+            />
+          </figure>
+          <figure class="portfolio-img-box">
+            <div class="portfolio-icon-box">
+              <ion-icon class="portfolio-icon" name="search-outline"></ion-icon>
+              <ion-icon
+                class="portfolio-icon"
+                name="bookmark-outline"
+              ></ion-icon>
+            </div>
+            <img
+              src="img/portfolio/product-1.jpg"
+              alt=""
+              class="portfolio-img"
+            />
+          </figure>
+          <figure class="portfolio-img-box">
+            <div class="portfolio-icon-box">
+              <ion-icon class="portfolio-icon" name="search-outline"></ion-icon>
+              <ion-icon
+                class="portfolio-icon"
+                name="bookmark-outline"
+              ></ion-icon>
+            </div>
+            <img
+              src="img/portfolio/product-2.jpg"
+              alt=""
+              class="portfolio-img"
+            />
+          </figure>
+          <figure class="portfolio-img-box">
+            <div class="portfolio-icon-box">
+              <ion-icon class="portfolio-icon" name="search-outline"></ion-icon>
+              <ion-icon
+                class="portfolio-icon"
+                name="bookmark-outline"
+              ></ion-icon>
+            </div>
+            <img
+              src="img/portfolio/product-3.jpg"
+              alt=""
+              class="portfolio-img"
+            />
+          </figure>
+        </div>
+        <div
+          class="portfolio-content grid grid-4-cols portfolio-content-1 portfolio-content-active"
+        >
+          <figure class="portfolio-img-box">
+            <div class="portfolio-icon-box">
+              <ion-icon class="portfolio-icon" name="search-outline"></ion-icon>
+              <ion-icon
+                class="portfolio-icon"
+                name="bookmark-outline"
+              ></ion-icon>
+            </div>
+            <img src="img/portfolio/app-1.jpg" alt="" class="portfolio-img" />
+          </figure>
+          <figure class="portfolio-img-box">
+            <div class="portfolio-icon-box">
+              <ion-icon class="portfolio-icon" name="search-outline"></ion-icon>
+              <ion-icon
+                class="portfolio-icon"
+                name="bookmark-outline"
+              ></ion-icon>
+            </div>
+            <img src="img/portfolio/app-2.jpg" alt="" class="portfolio-img" />
+          </figure>
+          <figure class="portfolio-img-box">
+            <div class="portfolio-icon-box">
+              <ion-icon class="portfolio-icon" name="search-outline"></ion-icon>
+              <ion-icon
+                class="portfolio-icon"
+                name="bookmark-outline"
+              ></ion-icon>
+            </div>
+            <img src="img/portfolio/app-3.jpg" alt="" class="portfolio-img" />
+          </figure>
+        </div>
+        <div class="portfolio-content grid grid-4-cols portfolio-content-2">
+          <figure class="portfolio-img-box">
+            <div class="portfolio-icon-box">
+              <ion-icon class="portfolio-icon" name="search-outline"></ion-icon>
+              <ion-icon
+                class="portfolio-icon"
+                name="bookmark-outline"
+              ></ion-icon>
+            </div>
+            <img
+              src="img/portfolio/product-1.jpg"
+              alt=""
+              class="portfolio-img"
+            />
+          </figure>
+          <figure class="portfolio-img-box">
+            <div class="portfolio-icon-box">
+              <ion-icon class="portfolio-icon" name="search-outline"></ion-icon>
+              <ion-icon
+                class="portfolio-icon"
+                name="bookmark-outline"
+              ></ion-icon>
+            </div>
+            <img
+              src="img/portfolio/product-2.jpg"
+              alt=""
+              class="portfolio-img"
+            />
+          </figure>
+          <figure class="portfolio-img-box">
+            <div class="portfolio-icon-box">
+              <ion-icon class="portfolio-icon" name="search-outline"></ion-icon>
+              <ion-icon
+                class="portfolio-icon"
+                name="bookmark-outline"
+              ></ion-icon>
+            </div>
+            <img
+              src="img/portfolio/product-3.jpg"
+              alt=""
+              class="portfolio-img"
+            />
+          </figure>
+        </div>
+        <div class="portfolio-content grid grid-4-cols portfolio-content-3">
+          <figure class="portfolio-img-box">
+            <div class="portfolio-icon-box">
+              <ion-icon class="portfolio-icon" name="search-outline"></ion-icon>
+              <ion-icon
+                class="portfolio-icon"
+                name="bookmark-outline"
+              ></ion-icon>
+            </div>
+            <img
+              src="img/portfolio/branding-1.jpg"
+              alt=""
+              class="portfolio-img"
+            />
+          </figure>
+          <figure class="portfolio-img-box">
+            <div class="portfolio-icon-box">
+              <ion-icon class="portfolio-icon" name="search-outline"></ion-icon>
+              <ion-icon
+                class="portfolio-icon"
+                name="bookmark-outline"
+              ></ion-icon>
+            </div>
+            <img
+              src="img/portfolio/branding-2.jpg"
+              alt=""
+              class="portfolio-img"
+            />
+          </figure>
+          <figure class="portfolio-img-box">
+            <div class="portfolio-icon-box">
+              <ion-icon class="portfolio-icon" name="search-outline"></ion-icon>
+              <ion-icon
+                class="portfolio-icon"
+                name="bookmark-outline"
+              ></ion-icon>
+            </div>
+            <img
+              src="img/portfolio/branding-3.jpg"
+              alt=""
+              class="portfolio-img"
+            />
+          </figure>
+        </div>
+        <div class="portfolio-content grid grid-4-cols portfolio-content-4">
+          <figure class="portfolio-img-box">
+            <div class="portfolio-icon-box">
+              <ion-icon class="portfolio-icon" name="search-outline"></ion-icon>
+              <ion-icon
+                class="portfolio-icon"
+                name="bookmark-outline"
+              ></ion-icon>
+            </div>
+            <img src="img/portfolio/books-1.jpg" alt="" class="portfolio-img" />
+          </figure>
+          <figure class="portfolio-img-box">
+            <div class="portfolio-icon-box">
+              <ion-icon class="portfolio-icon" name="search-outline"></ion-icon>
+              <ion-icon
+                class="portfolio-icon"
+                name="bookmark-outline"
+              ></ion-icon>
+            </div>
+            <img src="img/portfolio/books-2.jpg" alt="" class="portfolio-img" />
+          </figure>
+          <figure class="portfolio-img-box">
+            <div class="portfolio-icon-box">
+              <ion-icon class="portfolio-icon" name="search-outline"></ion-icon>
+              <ion-icon
+                class="portfolio-icon"
+                name="bookmark-outline"
+              ></ion-icon>
+            </div>
+            <img src="img/portfolio/books-3.jpg" alt="" class="portfolio-img" />
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section class="section team container" id="team">
+      <div class="title-box">
+        <h2 class="title-head">Our Team</h2>
+        <p class="title-description">
+          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+          consectetur velit
+        </p>
+      </div>
+      <div class="team-container grid grid-3-cols">
+        <div class="each-team">
+          <div class="team-img-box">
+            <img src="/img/team/team-1.jpg" alt="" class="team-img" />
+          </div>
+          <div class="team-story">
+            <div class="team-icon-box">
+              <ion-icon class="team-icon" name="logo-twitter"></ion-icon>
+              <ion-icon class="team-icon" name="logo-facebook"></ion-icon>
+              <ion-icon class="team-icon" name="logo-instagram"></ion-icon>
+              <ion-icon class="team-icon" name="logo-linkedin"></ion-icon>
+            </div>
+            <h4 class="text-type-1 color-dark">Walter White</h4>
+            <p class="description">Chief Executive Officer</p>
+          </div>
+        </div>
+        <div class="each-team">
+          <figure class="team-img-box">
+            <img src="/img/team/team-2.jpg" alt="" class="team-img" />
+          </figure>
+          <div class="team-story">
+            <div class="team-icon-box">
+              <ion-icon class="team-icon" name="logo-twitter"></ion-icon>
+              <ion-icon class="team-icon" name="logo-facebook"></ion-icon>
+              <ion-icon class="team-icon" name="logo-instagram"></ion-icon>
+              <ion-icon class="team-icon" name="logo-linkedin"></ion-icon>
+            </div>
+            <h4 class="text-type-1 color-dark">Sarah Jhonson</h4>
+            <p class="description">Product Manager</p>
+          </div>
+        </div>
+        <div class="each-team">
+          <figure class="team-img-box">
+            <img src="/img/team/team-3.jpg" alt="" class="team-img" />
+          </figure>
+          <div class="team-story">
+            <div class="team-icon-box">
+              <ion-icon class="team-icon" name="logo-twitter"></ion-icon>
+              <ion-icon class="team-icon" name="logo-facebook"></ion-icon>
+              <ion-icon class="team-icon" name="logo-instagram"></ion-icon>
+              <ion-icon class="team-icon" name="logo-linkedin"></ion-icon>
+            </div>
+            <h4 class="text-type-1 color-dark">William Anderson</h4>
+            <p class="description">CTO</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section recent-blog container" id="blog">
+      <div class="title-box">
+        <h2 class="title-head">Recent Blog Posts</h2>
+        <p class="title-description">
+          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+          consectetur velit
+        </p>
+      </div>
+      <div class="recent-container grid grid-3-cols">
+        <div class="each-blog">
+          <img src="/img/blog/blog-1.jpg" alt="" class="recent-blog-img" />
+          <div class="blog-below">
+            <span class="recent-blog-header text-type-2">Politics</span>
+            <h3 class="recent-blog-description description">
+              Dolorum optio tempore voluptas dignissimos
+            </h3>
+            <div class="recent-blog-profile">
+              <img
+                src="img/blog/blog-author.jpg"
+                alt=""
+                class="recent-blog-profile-img"
+              />
+              <div class="recent-blog-name-box">
+                <h2 class="text-type-2 margin-buttom">Marie Doe</h2>
+                <p class="text-type-p">Jan 1, 2022</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="each-blog">
+          <img src="/img/blog/blog-2.jpg" alt="" class="recent-blog-img" />
+          <div class="blog-below">
+            <span class="recent-blog-header text-type-2">Politics</span>
+            <h3 class="recent-blog-description description">
+              Dolorum optio tempore voluptas dignissimos
+            </h3>
+            <div class="recent-blog-profile">
+              <img
+                src="img/blog/blog-author-2.jpg"
+                alt=""
+                class="recent-blog-profile-img"
+              />
+              <div class="recent-blog-name-box">
+                <h2 class="text-type-2 margin-buttom">Marie Doe</h2>
+                <p class="text-type-p">Jan 1, 2022</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="each-blog">
+          <img src="/img/blog/blog-3.jpg" alt="" class="recent-blog-img" />
+          <div class="blog-below">
+            <span class="recent-blog-header text-type-2">Politics</span>
+            <h3 class="recent-blog-description description">
+              Dolorum optio tempore voluptas dignissimos
+            </h3>
+            <div class="recent-blog-profile">
+              <img
+                src="img/blog/blog-author-3.jpg"
+                alt=""
+                class="recent-blog-profile-img"
+              />
+              <div class="recent-blog-name-box">
+                <h2 class="text-type-2 margin-buttom">Marie Doe</h2>
+                <p class="text-type-p">Jan 1, 2022</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="map">
+      <div id="map" class="map"></div>
+    </section>
+    <section class="contact container" id="contact">
+      <div class="title-box">
+        <h2 class="title-head">Contact</h2>
+        <p class="title-description">
+          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+          consectetur velit
+        </p>
+      </div>
+      <div class="contact-container grid">
+        <div class="get-in-touch">
+          <h4 class="text-type-h3">Get In Touch</h4>
+          <p class="description">
+            et id eiuses lakfhsakklah klah;lakfg lklk;akhfg lhflzjfkg jfhsoi
+            zhgfghjfhvzjfhi.
+          </p>
+          <ul class="tab-content-list">
+            <li class="content-list contact-list">
+              <div class="content-icon-box">
+                <ion-icon
+                  class="content-icon"
+                  name="location-outline"
+                ></ion-icon>
+                <h4 class="content-header">Location</h4>
+              </div>
+              <p class="content-description">
+                Laborum omnis voluptates voluptas qui sit aliquam blanditiis.
+                Sapiente minima commodi dolorum non eveniet magni quaerat nemo
+                et.
+              </p>
+            </li>
+            <li class="content-list contact-list">
+              <div class="content-icon-box">
+                <ion-icon class="content-icon" name="mail-outline"></ion-icon>
+                <h4 class="content-header">Email:</h4>
+              </div>
+              <p class="content-description">
+                Laborum omnis voluptates voluptas qui sit aliquam blanditiis.
+                Sapiente minima commodi dolorum non eveniet magni quaerat nemo
+                et.
+              </p>
+            </li>
+            <li class="content-list contact-list">
+              <div class="content-icon-box">
+                <ion-icon
+                  class="content-icon"
+                  name="phone-portrait-outline"
+                ></ion-icon>
+                <h4 class="content-header">Call:</h4>
+              </div>
+              <p class="content-description">
+                Laborum omnis voluptates voluptas qui sit aliquam blanditiis.
+                Sapiente minima commodi dolorum non eveniet magni quaerat nemo
+                et.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="contact-box">
+          <div class="name-address">
+            <input type="text" class="contact-input" placeholder="Name" />
+            <input type="text" class="contact-input" placeholder="Address" />
+          </div>
+          <div class="subject-input">
+            <input type="text" class="contact-input" placeholder="Subject" />
+          </div>
+          <div class="text-area-box">
+            <textarea name="" id="" class="text-area"></textarea>
+          </div>
+          <a href="" class="btn btn-message">Send Message</a>
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="wrap">
+        <div class="footer-box container grid">
+          <ul class="footer-logo-box">
+            <li class="footer-logo-content"><h3>HeroBiz</h3></li>
+            <li class="footer-list">A108 Adam Street</li>
+            <li class="footer-list">A108 Adam Street</li>
+            <li class="footer-list">A108 Adam Street</li>
+          </ul>
+          <div class="footer-second grid grid-4-cols">
+            <ul class="footer-main-list">
+              <li class="footer-list"><h4>Useful Links</h4></li>
+              <li class="footer-list">Home</li>
+              <li class="footer-list">About Us</li>
+              <li class="footer-list">Services</li>
+              <li class="footer-list">Terms of Services</li>
+              <li class="footer-list">Privacy Policy</li>
+            </ul>
+            <ul class="footer-main-list">
+              <li class="footer-list"><h4>Our Services</h4></li>
+              <li class="footer-list">Home</li>
+              <li class="footer-list">About Us</li>
+              <li class="footer-list">Services</li>
+              <li class="footer-list">Terms of Services</li>
+              <li class="footer-list">Privacy Policy</li>
+            </ul>
+            <ul class="footer-main-list">
+              <li class="footer-list"><h4>Hic Solutas</h4></li>
+              <li class="footer-list">Home</li>
+              <li class="footer-list">About Us</li>
+              <li class="footer-list">Services</li>
+              <li class="footer-list">Terms of Services</li>
+              <li class="footer-list">Privacy Policy</li>
+            </ul>
+            <ul class="footer-main-list">
+              <li class="footer-list"><h4>Nobis illum</h4></li>
+              <li class="footer-list">Home</li>
+              <li class="footer-list">About Us</li>
+              <li class="footer-list">Services</li>
+              <li class="footer-list">Terms of Services</li>
+              <li class="footer-list">Privacy Policy</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="copyright">
+      <p class="copyright-text">
+        © Copyright MyWebsite. All Rights Reserved <br />
+        Designed by Newcore Tech
+      </p>
+      <div class="copyright-icon">
+        <ion-icon class="copyright-icons" name="logo-facebook"></ion-icon>
+        <ion-icon class="copyright-icons" name="logo-instagram"></ion-icon>
+        <ion-icon class="copyright-icons" name="logo-linkedin"></ion-icon>
+        <ion-icon class="copyright-icons" name="logo-twitter"></ion-icon>
+      </div>
+    </section>
+  </body>
+</html>

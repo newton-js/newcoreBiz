@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: tan;
+  padding: 1rem;
+}
+
+.nav-title {
+  font-size: 3rem;
+  color: purple;
+}
+
+.main-nav-list {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  font-size: 2rem;
+}
+
+.nav-list {
+  color: black;
+}
+
+.nav-list:hover {
+  color: purple;
+}
+
+.btn {
+  padding: 5px;
+  border-radius: 1rem;
+  border: none;
+  background-color: purple;
+  color: white;
+}
+
+.hassan-portal {
+  width: 80%;
+  margin: 5rem auto;
+  border: 1px solid tan;
+  border-radius: 1rem;
+}
+
+.input {
+  width: 100%;
+  padding: 2rem;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  outline: none;
+}
+
+.message {
+  width: 100%;
+  height: 40rem;
+}
+
+.btn-hassan {
+  display: inline-block;
+  margin: 0 auto;
+  background: none;
+  border: 1px solid tan;
+  background-color: tan;
+  color: purple;
+  padding: 1.5rem;
+}
