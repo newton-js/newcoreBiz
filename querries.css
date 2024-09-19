@@ -118,7 +118,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: tan;
+    background-color: var(--accent-color);
     width: 100vw;
     height: 100vh;
     display: none;
@@ -132,7 +132,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: tan;
+    background-color: var(--accent-color);
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -140,6 +140,11 @@
     justify-content: center;
     align-items: center;
     z-index: 999;
+  }
+
+  .nav-list:link,
+  .nav-list:visited {
+    color: var(--background-color);
   }
 
   .btn-nav {
@@ -308,7 +313,7 @@
   }
 
   .testimony {
-    padding: 3rem 0.1rem;
+    padding: 3rem 0rem;
   }
 
   .grid-6-cols {
@@ -335,6 +340,14 @@
     margin: 0 auto;
     gap: 5px;
     font-size: 1rem;
+  }
+
+  .text-type-1 {
+    font-size: 2rem;
+  }
+
+  .text-type-2 {
+    font-size: 1.5rem;
   }
 }
 

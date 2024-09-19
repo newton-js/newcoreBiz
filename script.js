@@ -205,6 +205,11 @@ allLinks.forEach((link) => {
       const sectionTo = document.querySelector(href);
       sectionTo.scrollIntoView({ behavior: "smooth" });
     }
+    // close Navigation
+    if (link.classList.contains("nav-list")) {
+      header.classList.toggle("nav");
+    }
+
     // window.location.href = href;
   });
 });
