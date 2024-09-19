@@ -9,6 +9,11 @@ navBtn.addEventListener("click", function (e) {
   header.classList.toggle("nav");
 });
 
+// Date //
+const year = document.querySelector(".year");
+const date = new Date();
+year.textContent = date.getFullYear();
+
 // Tabbed Component //
 
 // const a = ".tabs";
@@ -115,7 +120,7 @@ const nextSlide = function () {
   document.querySelector(`.dot-${currentSlide}`).classList.add("dot-active");
 };
 
-setInterval(nextSlide, 3000);
+setInterval(nextSlide, 4000);
 
 // Accordion //
 
@@ -203,13 +208,3 @@ allLinks.forEach((link) => {
     // window.location.href = href;
   });
 });
-
-console.log("omuya");
-
-async function omuyafx() {
-  const res = await fetch(`https://cdn.sft.org.ng/ads-manager/api/read`);
-  console.log(res);
-  data = res.json();
-  console.log(data);
-}
-omuyafx();

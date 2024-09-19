@@ -146,6 +146,8 @@
     display: flex;
     z-index: 9999;
     font-size: 3rem;
+    justify-content: center;
+    align-items: center;
     /* position: fixed;
     right: 3rem; */
   }
@@ -306,7 +308,7 @@
   }
 
   .testimony {
-    padding: 3rem 0.5rem;
+    padding: 3rem 0.1rem;
   }
 
   .grid-6-cols {
