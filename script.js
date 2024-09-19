@@ -203,3 +203,13 @@ allLinks.forEach((link) => {
     // window.location.href = href;
   });
 });
+
+console.log("omuya");
+
+async function omuyafx() {
+  const res = await fetch(`https://cdn.sft.org.ng/ads-manager/api/read`);
+  console.log(res);
+  data = res.json();
+  console.log(data);
+}
+omuyafx();
