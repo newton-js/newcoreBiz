@@ -232,3 +232,7 @@ body {
 .margin-buttom {
   margin-bottom: 1rem !important;
 }
+
+.lazy-img {
+  filter: blur(20px);
+}

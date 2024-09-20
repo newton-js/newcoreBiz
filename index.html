@@ -8,7 +8,7 @@
       content="NewcoreBiz is a prototype website for business landing page"
     />
     <link rel="icon" href="img/favicon.png" />
-    <link rel="apple-touch-icon" href="img/favicon.png" />
+    <!-- <link rel="apple-touch-icon" href="img/favicon.png" /> -->
     <link rel="manifest" href="manifest.webmanifest" />
     <link
       rel="stylesheet"
@@ -35,7 +35,7 @@
     <link rel="stylesheet" href="querries.css" />
     <title>NewcoreBusiness</title>
   </head>
-  <body>
+  <body class="sticky">
     <header class="header">
       <span class="logo">NewcoreBiz <span class="hero-dot">.</span></span>
       <ul class="main-nav-list">
@@ -76,7 +76,12 @@
       </button>
     </header>
     <section class="hero container">
-      <img class="hero-image" src="/img/hero-img.svg" alt="hero image" />
+      <img
+        class="hero-image lazy-img"
+        src="/img/hero-img-lazy.webp"
+        data-src="/img/hero-img.svg"
+        alt="hero image"
+      />
       <div class="hero-text-box">
         <p class="welcome">Welcome to <span class="biz">NewcoreBiz</span></p>
         <p class="description">
@@ -147,7 +152,12 @@
       <div class="about-story">
         <div class="about-bg">
           <img src="img/about-bg.png" alt="" class="about-img-background" />
-          <img class="about-img" src="img/about-portrait.jpg" alt="" />
+          <img
+            class="about-img lazy-img"
+            src="img/about-portrait.webp"
+            data-src="img/about-portrait.jpg"
+            alt="for about"
+          />
         </div>
         <div class="about-tabbed-component">
           <p class="tabbed-header">
@@ -1688,8 +1698,7 @@
         <div class="get-in-touch">
           <h4 class="text-type-h3">Get In Touch</h4>
           <p class="description">
-            et id eiuses lakfhsakklah klah;lakfg lklk;akhfg lhflzjfkg jfhsoi
-            zhgfghjfhvzjfhi.
+            If you want to contact us and you mean business, check the map.
           </p>
           <ul class="tab-content-list">
             <li class="content-list contact-list">

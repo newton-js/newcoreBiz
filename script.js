@@ -9,6 +9,29 @@ navBtn.addEventListener("click", function (e) {
   header.classList.toggle("nav");
 });
 
+// STICKY //
+const heroSection = document.querySelector(".hero");
+
+const navObserver = new IntersectionObserver(
+  function (entries) {
+    const [entry] = entries;
+    if (!entry.isIntersecting) {
+      document.body.classList.add("sticky");
+      console.log("not intersect");
+    } else {
+      document.body.classList.remove("sticky");
+      console.log("intersect");
+    }
+  },
+  {
+    root: null,
+    threshold: 0,
+    rootMargin: "-100px",
+  }
+);
+
+navObserver.observe(heroSection);
+
 // Date //
 const year = document.querySelector(".year");
 const date = new Date();
@@ -38,21 +61,20 @@ function tabbedComponent(
   tabs.addEventListener("click", function (e) {
     e.preventDefault();
     const clicked = e.target.classList.contains(tabBox);
-    if (!clicked) return;
-
-    eachTab.forEach((item) => item.classList.remove(activeTab));
-
-    e.target.classList.add(activeTab);
-    tabContent.forEach((content) => {
-      // console.log(content);
-      content.classList.remove(activeContent);
-    });
-
-    const data = e.target.dataset.tab;
-    // console.log(data);
-    document
-      .querySelector(`.${display}content-${data}`)
-      .classList.add(activeContent);
+    console.log(clicked, e.target);
+    if (e.target.closest(`.${tabBox}`)) {
+      eachTab.forEach((item) => item.classList.remove(activeTab));
+      const point = e.target.closest(`.${tabBox}`);
+      point.classList.add(activeTab);
+      tabContent.forEach((content) => {
+        content.classList.remove(activeContent);
+      });
+      const data = point.dataset.tab;
+      console.log(data);
+      document
+        .querySelector(`.${display}content-${data}`)
+        .classList.add(activeContent);
+    }
   });
 }
 
@@ -213,3 +235,26 @@ allLinks.forEach((link) => {
     // window.location.href = href;
   });
 });
+
+// Lazy Loading //
+
+const allImgs = document.querySelectorAll("img[data-src]");
+
+const imgObserver = new IntersectionObserver(
+  function (entries, observer) {
+    const [entry] = entries;
+    if (!entry.isIntersecting) return;
+    entry.target.src = entry.target.dataset.src;
+    entry.target.addEventListener("load", function () {
+      entry.target.classList.remove("lazy-img");
+    });
+    observer.unobserve(entry.target);
+  },
+  {
+    root: null,
+    threshold: 0.1,
+    rootMargin: "150px",
+  }
+);
+
+allImgs.forEach((img) => imgObserver.observe(img));
