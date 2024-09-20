@@ -228,7 +228,7 @@ allLinks.forEach((link) => {
       sectionTo.scrollIntoView({ behavior: "smooth" });
     }
     // close Navigation
-    if (link.classList.contains("nav-list")) {
+    if (link.classList.contains("nav-listed")) {
       header.classList.toggle("nav");
     }
 

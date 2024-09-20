@@ -827,6 +827,15 @@
   margin: 0 auto;
 }
 
+.portfolio-nav-list {
+  font-size: 2rem;
+}
+
+/* .portfolio-tab .nav-list:hover,
+.nav-list:active {
+  font-size: 3rem;
+} */
+
 .portfolio .nav-list:hover,
 .nav-list:active {
   border-bottom: none;

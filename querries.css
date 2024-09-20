@@ -274,6 +274,10 @@
     margin: 0 auto;
     margin-bottom: 5rem;
   }
+
+  .portfolio-nav-list {
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 41em) {
@@ -322,6 +326,10 @@
 
   .tab-li {
     padding: 5px;
+  }
+
+  .portfolio-nav-list {
+    font-size: 1.2rem;
   }
 }
 
